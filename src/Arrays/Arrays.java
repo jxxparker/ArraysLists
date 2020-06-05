@@ -34,4 +34,9 @@ public class Arrays {
 		return (double) sum / (double)array.length;
 		
 	}
+
+	public static String toString(int[] myIntArray) {
+		// TODO Auto-generated method stub
+		return null;
+	}
 }
