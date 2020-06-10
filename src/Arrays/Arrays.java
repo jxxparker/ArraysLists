@@ -3,40 +3,11 @@ package Arrays;
 import java.util.Scanner;
 
 public class Arrays {
-	private static Scanner scanner = new Scanner(System.in);
 	public static void main(String[] args) {
-		int[] myIntegers = getIntegers(5);
-		for(int i = 0; i <myIntegers.length; i++) {
-			System.out.println("element " + i + ", typed value was " + myIntegers[i]);
-		}
-		System.out.println("the avg is " + getAverage(myIntegers));
-		
+		int[] myIntArray = new int[10];
+		myIntArray[5] = 50;
+		double[] myDoubleArray = new double[10];
+		System.out.println(myIntArray[0]);
 	}
-	
-	public static int[] getIntegers(int number) {
-		System.out.println("enter " + number + " integer values.\r");
-		int[] values = new int[number];
 		
-		for(int i = 0; i < values.length; i++) {
-			values[i] = scanner.nextInt();
-			
-		}
-		
-		return values;
-	}
-	
-	public static double getAverage(int[] array) {
-		int sum = 0;
-		for(int i = 0; i < array.length; i++) {
-			sum += array[i];
-			
-		}
-		return (double) sum / (double)array.length;
-		
-	}
-
-	public static String toString(int[] myIntArray) {
-		// TODO Auto-generated method stub
-		return null;
-	}
 }
